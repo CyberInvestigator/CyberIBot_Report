@@ -1,10 +1,3 @@
-/*
-
-Softy Pinko
-
-https://templatemo.com/tm-535-softy-pinko
-
-*/
 /* ---------------------------------------------
 Table of contents
 ------------------------------------------------
@@ -77,6 +70,7 @@ header, nav, section, article, aside, footer, hgroup {
 * {
   box-sizing: border-box;
 }
+
 
 html, body {
   font-family: "Raleway", sans-serif;
@@ -750,7 +744,8 @@ welcome
 features
 --------------------------------------------- 
 */
-.features-small-item {
+
+@media (prefers-color-scheme:light){.features-small-item {
   cursor: pointer;
   display: block;
   background: #FFFFFF;
@@ -766,7 +761,24 @@ features
   transition: all 0.3s ease 0s;
   position: relative;
   margin-bottom: 30px;
-}
+}}
+@media (prefers-color-scheme:dark){.features-small-item {
+  cursor: pointer;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(240, 9, 190, 0.1);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin-bottom: 30px;
+}}
 
 .features-small-item:hover .icon {
   background-color: #8261ee;
