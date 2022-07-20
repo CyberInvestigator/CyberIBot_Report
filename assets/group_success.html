@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        @media (prefers-color-scheme:light){
+        thanks-wrap {
+        background: #FFFFFF;
+        padding: 30px;
+        margin: 0 auto 10px;
+        display: none;
+        max-width: 320px;
+        }}
+        @media (prefers-color-scheme:dark){
+        thanks-wrap {
+        background: #000000;
+        padding: 30px;
+        margin: 0 auto 10px;
+        display: none;
+        max-width: 320px;
+        }}
+
+        .checkmark {
+        max-width: 300px;
+        margin: 0 auto;
+        }
+
+        .path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 0;
+        -webkit-animation: dash 2s ease-in-out;
+                animation: dash 2s ease-in-out;
+        }
+
+        .spin {
+        -webkit-animation: spin 2s;
+                animation: spin 2s;
+        transform-origin: 50% 50%;
+        }
+
+        h2 {
+        -webkit-animation: text 1s;
+                animation: text 1s;
+        }
+
+        @-webkit-keyframes dash {
+        0% {
+            stroke-dashoffset: 1000;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+        }
+
+        @keyframes dash {
+        0% {
+            stroke-dashoffset: 1000;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+        }
+        @-webkit-keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+        @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+        @-webkit-keyframes text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        }
+        @keyframes text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        }
+    </style>
+<head>
+    <title>Thanks for submitting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+</head>
+<body style="margin-top: 50px;">
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="thanks-wrap">
+
+                    <div class="checkmark">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.2 161.2">
+                            <circle class="path" fill="none" stroke="#8261ee" stroke-width="4" stroke-miterlimit="10" cx="80.6" cy="80.6" r="62.1"/>
+                            <path class="path" fill="none" stroke="#8261ee" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" d="M113 52.8l-38.9 55.6-25.9-22"/>
+                            <circle class="spin" fill="none" stroke="#ff589e" stroke-width="4" stroke-miterlimit="10" stroke-dasharray="12.2175,12.2175" cx="80.6" cy="80.6" r="73.9"/>
+                        </svg>
+                    </div>
+                    <h2>Your group will be created within few seconds, keep checking your telegram!</h2>
+                </div>
+                <a href="https://www.cyiai.com">Go back to home</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
